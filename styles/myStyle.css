@@ -1,0 +1,370 @@
+﻿body {
+    direction: rtl;
+    font-size: 24px;
+    background-image: url('../images/background.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+/*כותרת*/
+.main-title {
+    font-size: 50px;
+    color: #012030;
+    text-align: center;
+    width: 100%;
+}
+
+.header-h1 {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 0 0 100% 100%;
+    margin-bottom: 2%;
+    background: #FEFEFE;
+    border-bottom: 8px solid #FEF4DA;
+}
+
+/*מהי נציבות*/
+.card {
+    background: rgb(255,255,255,0.83);
+}
+
+.description-end-line{
+    font-weight: 500;
+}
+
+/*כרטיסי זכויות*/
+.rights {
+    background: rgba(255,255,255,0.7);
+    padding: 1%;
+}
+
+.right-image {
+    width: 190px;
+    height: 190px;
+}
+
+.pop-up-sound-button {
+    font-size: 30px;
+}
+
+.rights-box {
+    margin: auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    background-color: #FDDB86;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+    .item:hover {
+        background: #FEF4DA;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+
+        .item:hover .item,
+        .item:hover span.icon {
+            background: #fff;
+            border-radius: 5px;
+            -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+        }
+
+        .item:hover h3,
+        .item:hover p {
+            color: black;
+            font-weight: bold;
+            -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+            font-size: 30px;
+        }
+
+    .item .icon {
+        font-size: 40px;
+        margin-bottom: 25px;
+        color: #7183ff;
+        width: 90px;
+        height: 90px;
+        line-height: 96px;
+        border-radius: 50px;
+    }
+
+    .item .feature_box_col_one {
+        background: rgba(247, 198, 5, 0.2);
+        color: #7183ff;
+    }
+
+    .item .feature_box_col_two {
+        background: rgba(255, 77, 28, 0.15);
+        color: #7183ff;
+    }
+
+    .item .feature_box_col_three {
+        background: rgba(0, 147, 38, 0.15);
+        color: #7183ff;
+    }
+
+    .item .feature_box_col_four {
+        background: rgba(0, 108, 255, 0.15);
+        color: #7183ff;
+    }
+
+    .item .feature_box_col_five {
+        background: rgba(146, 39, 255, 0.15);
+        color: #7183ff;
+    }
+
+    .item .feature_box_col_six {
+        background: rgba(23, 39, 246, 0.15);
+        color: #7183ff;
+    }
+
+    .item p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .item h6 {
+        margin-bottom: 20px;
+        color: #2f2f2f;
+    }
+
+/*חלון הסבר על זכות*/
+.what-is-sound-icon {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.card-top-right {
+    position: absolute;
+    margin-right: -15px;
+}
+
+.card-sound-button {
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.modal-confirm {
+    color: #636363;
+    width: 325px;
+    margin: 80px auto 0;
+}
+
+.modal-title {
+    padding: 0;
+}
+
+.modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-confirm .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+
+.modal-confirm h3 {
+    text-align: center;
+    font-size: 26px;
+    margin: 90px 0 -15px;
+}
+
+.modal-confirm .form-control, .modal-confirm .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.modal-confirm .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.modal-confirm .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.modal-confirm .icon-box {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -40px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+    .modal-confirm .icon-box i {
+        font-size: 56px;
+        position: relative;
+        top: 4px;
+    }
+
+.modal-confirm .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #ef513a;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+
+    .modal-confirm .btn:hover, .modal-confirm .btn:focus {
+        background: #da2c12;
+        outline: none;
+    }
+
+.modal-body-text {
+    margin-bottom: -0.5rem;
+}
+
+.pt-5 {
+    padding-top: 0 !important;
+}
+
+.right-name-title {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+/*כפתורי יצירת קשר*/
+.contact-button-text {
+    vertical-align: sub;
+}
+
+#contact-buttons {
+    margin: 5% 0;
+    background-color: #012030;
+    margin-bottom: 0%;
+    padding: 1% 3% 1% 3%;
+}
+
+    #contact-buttons h2, #contact-buttons p {
+        color: white;
+    }
+
+    #contact-buttons a {
+        margin: 20px auto;
+        color: white;
+    }
+
+.contact-icon {
+    margin-bottom: 3px;
+}
+
+.alert {
+    margin-bottom: 0;
+    width: fit-content;
+}
+
+#phone {
+    background-color: #4bacc6;
+    border: 2px solid #357d91;
+    height: 60px !important;
+}
+
+#whatsapp {
+    background-color: #04a100;
+    border: 2px solid #548235;
+    height: 60px !important;
+}
+
+#facebook {
+    background-color: #4f81bd;
+    border: 2px solid #406b9d;
+    height: 60px !important;
+}
+
+#instagram {
+    background-color: #ff0077;
+    border: 2px solid #8d3937;
+    height: 60px !important;
+}
+
+/*הגדרות של המפה */
+#map {
+    height: 150px !important;
+    width: 100%;
+}
+
+/*שורת קרטידים*/
+.credits-container {
+    width: 100%;
+    background-color: rgb(248, 249, 250, 0.7);
+    padding: 1% 1%;
+    font-size: 18px;
+    display: inline-table;
+}
+
+.credits-text {
+    float: left;
+}
+
+/*אודות*/
+#myAboutModal {
+    text-align: center;
+}
+
+.about-modal {
+    padding: 3%;
+}
+
+#authorsName {
+    font-style: italic;
+}
+
+#hitlogo {
+    width: 100px;
+    height: 70px;
+}
+
+/*כללי*/
+.no-opacity {
+    opacity: 100% !important;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.sound-button {
+    font-size: 40px !important;
+}
+
+.clickable {
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+    .clickable:hover {
+        color: #024D72;
+    }
